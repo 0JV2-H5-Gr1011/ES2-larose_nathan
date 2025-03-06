@@ -7,19 +7,28 @@
             "actions": [
                 {
                     "name": "Move",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "68d8281e-b4a1-4379-bf92-1d7125a3bab6",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "MonteDescend",
+                    "type": "Value",
+                    "id": "ea5df82e-3c82-48e8-9a98-2948a5ee00b0",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
                 {
-                    "name": "MonteDescend",
-                    "id": "5aaa2dfa-8e16-48b5-9204-d819ac11a638",
-                    "path": "1DAxis",
+                    "name": "WS",
+                    "id": "a9583922-7319-4f81-928b-5715da7064d0",
+                    "path": "Dpad",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -28,24 +37,57 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "negative",
-                    "id": "f056fa93-e10d-4d51-9a9d-966035bd1b8a",
-                    "path": "<Keyboard>/e",
+                    "name": "up",
+                    "id": "5c60c3dd-c052-4017-9dcc-cc3cf8f771c8",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard&Mouse",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "down",
+                    "id": "c5b44a7b-8f7e-47c0-b201-81e1e95e52af",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "89b10ea7-8654-42e7-82ef-715b25a69218",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MonteDescend",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "b1fb64e0-0977-4c2c-8453-08511ec9604e",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MonteDescend",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "positive",
-                    "id": "69aeb351-af27-482b-bc0e-8461fc2dd63c",
+                    "id": "a42d6788-e2fc-4210-8e9d-048642aefa4d",
                     "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "MonteDescend",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }
