@@ -58,12 +58,7 @@ public class MouvementSousMarin : MonoBehaviour
     {
         _rb.AddForce(_direction * Time.deltaTime * _forceVitesse, ForceMode.VelocityChange);
 
-        if (_direction.magnitude > 0.01f)
-        {
-
-            _rb.MoveRotation(Quaternion.LookRotation(_direction, Vector3.up));
-
-        }
+        
 
     }
 
